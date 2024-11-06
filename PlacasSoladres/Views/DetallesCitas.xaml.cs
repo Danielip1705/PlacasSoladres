@@ -18,12 +18,18 @@ public partial class DetallesCitas : ContentPage
 		{
 		await Navigation.PopAsync();
 		}
-		/// <summary>
-		/// Funcion que dependiendo del check escribe en el label si es apto o no
-		/// </summary>
-		/// <param name="obj"></param>
-		/// <param name="args"></param>
-        public void aptoONo(object obj, CheckedChangedEventArgs args){
+
+		private async void GuardarInforme(object obj, EventArgs args)
+		{
+		DisplayAlert("Guardado con exito", "Se ha guardado el informe.", "Ok");
+		}
+
+    /// <summary>
+    /// Funcion que dependiendo del check escribe en el label si es apto o no
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="args"></param>
+    public void aptoONo(object obj, CheckedChangedEventArgs args){
 
 
         if (args.Value){

@@ -26,6 +26,7 @@
 
         <Button Text="Guardar" 
                 WidthRequest="120"
-                HeightRequest="50"/>
+                HeightRequest="50"
+                Clicked="GuardarInforme"/>
     </VerticalStackLayout>
 </ContentPage>
