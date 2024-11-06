@@ -18,7 +18,11 @@ public partial class DetallesCitas : ContentPage
 		{
 		await Navigation.PopAsync();
 		}
-
+		/// <summary>
+		/// Funcion que cuando se presiona el boton muestra un mensaje de que se ha guardado el informe
+		/// </summary>
+		/// <param name="obj"></param>
+		/// <param name="args"></param>
 		private async void GuardarInforme(object obj, EventArgs args)
 		{
 		DisplayAlert("Guardado con exito", "Se ha guardado el informe.", "Ok");
